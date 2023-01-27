@@ -2,7 +2,7 @@ import { Nav, NavDropdown } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 import { Link } from "react-router-dom";
 import Colors from "../common/Colors";
-import "../headerDropdown.css";
+import "../css/headerDropdown.css";
 
 const useStyles = createUseStyles({
   dropdown: {

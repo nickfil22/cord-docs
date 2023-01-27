@@ -1,32 +1,32 @@
-const GREY_X_DARK = '#191A1E';
-const PURPLE = '#7371EE';
-const OPACITY_33 = '54';
+const GREY_X_DARK = "#191A1E";
+const PURPLE = "#7371EE";
+const OPACITY_33 = "54";
 
 // Please use the full 6-character color syntax, otherwise weird things happen
 // when you try to append opacity modifiers, for example the TRANSLUCENT colors
 const Colors = {
-  ALERT_LIGHT: '#FDEFEF',
-  ALERT: '#EB5757',
-  GREEN: '#71BC8F',
-  GREY_X_LIGHT: '#F6F6F6',
-  GREY_LIGHT: '#DADCE0',
-  GREY: '#AAAAAC',
-  GREY_DARK: '#76767A',
+  ALERT_LIGHT: "#FDEFEF",
+  ALERT: "#EB5757",
+  GREEN: "#71BC8F",
+  GREY_X_LIGHT: "#F6F6F6",
+  GREY_LIGHT: "#DADCE0",
+  GREY: "#AAAAAC",
+  GREY_DARK: "#76767A",
   GREY_X_DARK,
-  ORANGE_LIGHT: '#FBE3D6',
-  ORANGE: '#F88D76',
+  ORANGE_LIGHT: "#FBE3D6",
+  ORANGE: "#F88D76",
   PURPLE,
-  PURPLE_LIGHT: '#D1D0F9',
-  PURPLE_DARK: '#5F5EB3',
-  ACID_YELLOW: '#F4FFA0',
-  YELLOW: '#F2FFA1',
-  BLACK: '#000000',
-  WHITE: '#FFFFFF',
-  FOCUS: '#CAE3F1',
+  PURPLE_LIGHT: "#D1D0F9",
+  PURPLE_DARK: "#5F5EB3",
+  ACID_YELLOW: "#F4FFA0",
+  YELLOW: "#F2FFA1",
+  BLACK: "#000000",
+  WHITE: "#FFFFFF",
+  FOCUS: "#CAE3F1",
   TRANSLUCENT_DARK: GREY_X_DARK + OPACITY_33,
   TRANSLUCENT_PURPLE: PURPLE + OPACITY_33,
-  TRANSPARENT: 'transparent',
-  INHERIT: 'inherit',
+  TRANSPARENT: "transparent",
+  INHERIT: "inherit",
 };
 
 export default Colors;
@@ -40,7 +40,7 @@ export function isCordColor(color: string): color is Color {
 }
 
 export function withOpacityZero(color: Color) {
-  return Colors[color] + '00';
+  return Colors[color] + "00";
 }
 
 /*
@@ -50,7 +50,7 @@ export function withOpacityZero(color: Color) {
 */
 export function cssColorFromColorArgument(
   color: Color | string | undefined,
-  defaultColor: Color,
+  defaultColor: Color
 ) {
   // if nothing is provided, return the default
   if (!color) {

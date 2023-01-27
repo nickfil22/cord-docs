@@ -1,0 +1,7 @@
+.dropdown-menu.show {
+  background-color: #d1d0f9;
+  transition: opacity ease-in-out 0.2s;
+
+  border-radius: 10px;
+  min-width: 100%;
+}
